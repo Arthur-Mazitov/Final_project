@@ -14,3 +14,4 @@ class ProductPageLocators():
     BOOK_NAME_IN_ALERT = (By.CSS_SELECTOR, "div[class='alertinner ']>strong")
     PRICE = (By.CSS_SELECTOR, "div>p[class='price_color']")
     PRICE_IN_ALERT = (By.CSS_SELECTOR, "div[class='alertinner ']>p>strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div:nth-child(2)>div[class='alertinner ']>strong")
