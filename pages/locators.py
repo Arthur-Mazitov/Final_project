@@ -15,3 +15,7 @@ class ProductPageLocators():
     PRICE = (By.CSS_SELECTOR, "div>p[class='price_color']")
     PRICE_IN_ALERT = (By.CSS_SELECTOR, "div[class='alertinner ']>p>strong")
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div:nth-child(2)>div[class='alertinner ']>strong")
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link")
