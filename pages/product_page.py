@@ -7,8 +7,7 @@ class ProductPage(BasePage):
         link = self.browser.find_element(*ProductPageLocators.ADD_TO_BASKET)
         link.click()
         time.sleep(1)
-        self.solve_quiz_and_get_code()
-                   
+        self.solve_quiz_and_get_code()         
     
     def is_book_name_correct(self):
         BOOK_NAME_IN_ALERT = self.browser.find_element(*ProductPageLocators.BOOK_NAME_IN_ALERT)
@@ -20,10 +19,8 @@ class ProductPage(BasePage):
         PRICE = self.browser.find_element(*ProductPageLocators.PRICE)
         assert PRICE_IN_ALERT.text == PRICE.text
 
-        
     def should_not_be_success_message(self):
         assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE),"Success message is presented, but should not be"
-
 
     def should_be_success_message(self):
         assert self.is_element_present(*ProductPageLocators.SUCCESS_MESSAGE),"Success message is not presented, but should be"
